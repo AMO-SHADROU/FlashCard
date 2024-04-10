@@ -9,7 +9,7 @@ current_card = {}
 try:
     data = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
-    data = pandas.read_csv("data/words_to_learn.csv")
+    data = pandas.read_csv("data/french_words.csv")
     to_learn = data.to_dict(orient="records")
 else:
     to_learn = data.to_dict(orient="records")
